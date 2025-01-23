@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/all.css">
+	<link rel="stylesheet" href="../CSS/bootstrap.css">
+	<link rel="stylesheet" href="../CSS/MAIN-STYLE.css">
+	<link rel="stylesheet" href="../CSS/assets/owl.carousel.css">
+	<link rel="stylesheet" href="../CSS/assets/owl.theme.default.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../IMAGE/pizza.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- TemplateBeginEditable name="doctitle" -->
+	<title>PIZZA</title>
+	<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div class="bg-primary text-info py-2">
+		<div class="container">
+			<span class="fas fa-map-marked p-2"></span>
+			6 Ward, Tân An City, Long An Province
+			<span class="fas fa-phone p-2"></span>
+			0703127885
+			<span class="fas fa-mail-bulk p-2"></span>
+			nguyenthanhtruc02012002@gmail.com
+  </div>
+	</div>
+	
+<header>
+	
+	<!--popup search-->
+	<div class="modal" id="search-box">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Search</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+			<div class="modal-body">
+				<form name="search" class="input-group  my-4 px-4">
+					
+					<input type="text" class="form-control form-control-lg" placeholder="Search here">
+					<button type="button" class="input-group-append btn btn-outline-primary">
+						Search
+					</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<!--popup shopping cart-->
+	<div class="modal" id="shopping-box">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Giỏ hàng</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+			<div class="modal-body">
+				<div class="cart-row d-flex">
+					<span class="cart-item cart-header cart-column">ITEM</span>
+					<span class="cart-price cart-header cart-column">PRICE</span>
+					<span class="cart-quantity cart-header cart-column">QUANTITY</span>
+				</div>
+				
+				<div class="cart-items"></div>
+				<div class="cart-total">
+					<strong class="cart-total-title">Total</strong>
+					<span>$</span>
+					<span class="cart-total-price text-danger">0</span>
+				</div>
+				
+				<button type="button" class="btn btn-outline-primary btn-purchase">THANH TOÁN</button>
+			</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	
+	<!--popup user box-->
+	<div class="modal" id="user-box" >
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Đăng nhập</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for = "exampleInputEmail1" class="my-2">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						<small id="emailHelp1" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<div class="form-group">
+						<label class="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					<div class="row px-3">
+						<div class="text-right col-12">
+							<p class="col-12 text-secondary text-right">
+								<small>not a member?</small>
+								<a href="../SignUp.html" class="text-danger">Sign up</a>
+							</p>
+						</div>
+						
+					</div>
+					<button type="submit" class="btn btn-outline-primary">Submit</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+			</div>
+			</div>
+		</div>
+	</div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <div class="container">
+			<a class="navbar-brand" href="../index.html"><img src="../IMAGE/LOGO.png"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			  <ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+				  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+					Menu
+				  </a>
+				  <ul class="dropdown-menu" >
+					<li><a class="dropdown-item" href="../Bagel_Pizza.html">Bagel Pizza</a></li>
+					<li><a class="dropdown-item" href="../Breakfast_Pizza.html">Breakfast Pizza</a></li>
+					<li><a class="dropdown-item" href="../BBQ_Chicken_Pizza.html">BBQ Chicken Pizza</a></li>
+					<li><a class="dropdown-item" href="../Dessert_Pizza.html">Dessert Pizza</a></li>
+					<li><a class="dropdown-item" href="../Pan_Pizza.html">Pan Pizza</a></li>
+					<li><a class="dropdown-item" href="../Square_Pizza.html">Square Pizza</a></li>
+				  </ul>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../Blog.html">Blog</a>
+				</li>
+				 <li class="nav-item">
+				  <a class="nav-link" href="../AboutUs.html">About Us</a>
+				</li>
+				  <li class="nav-item">
+				  <a class="nav-link" href="../Contact.html">Contact</a>
+				</li>
+
+			  </ul>
+				<div class="navbar-text d-flex">
+					<a href="#search-box" data-bs-toggle = "modal">
+						<i class="fas fa-search"></i>
+					</a>
+
+					<a href="#user-box" data-bs-toggle="modal" class ="mx-2">
+						<i class="fas fa-user-alt" ></i>
+					</a>
+					
+					<a href="#shopping-box" data-bs-toggle="modal">
+						<i class="fas fa-shopping-cart" ></i>
+						<span class="badge badge-warning">0</span>
+					</a>
+				</div>
+			</div>
+
+		  </div>
+  </nav>
+	</header>
+	
+	<!-- TemplateBeginRepeat name="lap" -->
+	<!-- TemplateBeginEditable name="ten-trang" -->
+    <div class="title-page">
+      <div class="text-center">
+        <h2 class="tieudetrang">Tên Trang</h2>
+        <p>Home / Tên Trang</p>
+      </div>
+    </div>
+    <!-- TemplateEndEditable --><!-- TemplateEndRepeat --> 
+	<!-- TemplateBeginEditable name="main" -->
+	<main>
+	</main>
+	<!-- TemplateEndEditable -->
+<footer class="bg-dark py-4 text-light">
+	<div class="container">
+			<div class="row justify-content-between text-center text-lg-start">
+				<div class="col-lg-4">
+					<img src="../IMAGE/logo_footer.png">
+					
+					<div class="footer-menu py-3">
+					<p><i class="fas fa-location-dot"></i> 6 Ward, Tân An City, Long An Province</p>
+					<p><i class="fas fa-phone"></i> 070 312 7885</p>
+					<p><i class="fas fa-envelope"></i> nguyenthanhtruc02012002@gmail.com</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-3">
+					<div class="footer-menu">
+						<h4>Opening Hours</h4>
+						<p><b>Monday - Friday :</b> <br>8.00 AM - 22.00 PM</p>
+						<p><b>Saturday :  </b> <br>8.00 AM - 22.00 PM</p>
+						<p><b>Sunday :  </b> <br>CLOSED</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-3">
+					<div class="footer-menu text-footer">
+						<h4>Hot Menu</h4>
+						<p><a href="../Bagel_Pizza.html">Bagel Pizza</a></p>
+						<p><a href="../Breakfast_Pizza.html">Breakfast Pizza</a></p>
+						<p><a href="../BBQ_Chicken_Pizza.html">BBQ Chicken Pizza</a></p>
+						<p><a href="../Dessert_Pizza.html">Dessert Pizza</a></p>
+						<p><a href="../Pan_Pizza.html">Pan Pizza</a></p>
+						<p><a href="../Square_Pizza.html">Square Pizza</a></p>
+					</div>
+				</div>
+				
+				<div class="col-lg-2">
+					<div class="footer-menu">
+						<h4>Contact</h4>
+						<p class="icon-ss">
+						  <a href="#" class="a-fb"><i class="fab fa-facebook-f fa-lg"></i></a>
+						  <a href="#" class="a-tw"><i class="fab fa-twitter fa-lg"></i></a>
+						  <a href="#" class="a-google"><i class="fab fa-google fa-lg"></i></a>
+						</p>
+					</div>
+			  </div>
+			</div>
+		</div>
+		
+  <div class="border-top border-light py-3 text-center">
+		Copyright © 2020 Pizza  
+		</div>
+	</footer>
+	
+	<script src="../JS/jquery-3.6.3.min.js"></script>
+<script src="../JS/bootstrap.bundle.js"></script>
+<script src="../JS/owl.carousel.js"></script>
+<script src="../JS/custom.js"></script>
+</body>
+</html>
